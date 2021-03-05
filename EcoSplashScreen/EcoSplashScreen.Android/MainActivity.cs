@@ -8,6 +8,7 @@ using Android.Widget;
 using Android.OS;
 using Android.Support.V7.App;
 using System.Drawing;
+using EcoSplashScreen.Droid;
 
 namespace EcoSplashScreen
 {
@@ -26,6 +27,7 @@ namespace EcoSplashScreen
                 .WithTargetActivity(Java.Lang.Class.FromType(typeof(TargetActivity)))
                 .WithSplashTimeOut(5000) // 5 sec                
                 .WithBackgroundColor(Color.LawnGreen)
+                .WithLogo(Resource.Drawable.logo)
                 .WithHeaderText("Welcome Guest !!!")
                 .WithFooterText("Copyright 2021")
                 .WithBeforLogoText("EcoBloc")
